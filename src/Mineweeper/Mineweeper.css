@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    flex-direction: column;
+    position: relative;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: lightcoral;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.header h1{
+    font-size: calc(1vw + 20px);
+}
+
+.header h2{
+    font-size: calc(1vw + 10px);
+}
+
+
+
+.detail{
+    display: flex;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6rem;
+    z-index: 5;
+}
+
+.overlay h1{
+    color: red;
+    font-size: calc(1vw + 5rem);
+}
+
+.overlay h2{
+    color: white;
+}
+
+.overlay button{
+    margin-top: 20px;
+    height: 34px;
+    width: 88px;
+    font-size: 1rem;
+    background-color: black;
+    color: aqua;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+
+.detail button{
+    margin-left: 2rem;
+    width: calc(1vw + 60px);
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: calc(1vw + 5px);
+    transition: 0.5s all;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+.box{
+    height: 90px;
+    width:  90px;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+}
+.box:hover{
+    transform: scale(1.1);
+}   
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: auto;
+    width: 90%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 1rem 2rem;
+}
+
+@media all and (max-width:900px){
+    .box{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+@media all and (max-width:700px){
+    .header{
+        padding: 0 2rem;
+        height: 60px;
+    }
+    .header h1{
+        font-size: calc(1vw + 15px);
+    }
+    .overlay h1{
+        font-size: calc(1vw + 4rem);
+    }
+    .box{
+        height: 55px;
+        width: 55px;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:400px){
+    .header{
+        padding: 0 0.5rem;
+    }
+    .detail button{
+        margin-left: 1rem;
+    }
+    .overlay h1{
+        font-size: calc(1vw + 3rem);
+    }
+    .box{
+        height: 35px;
+        width: 35px;
+    }
+}

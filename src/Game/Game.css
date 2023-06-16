@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.wrapper{
+    position: relative;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: red;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2rem;
+    background-color: rgb(6, 6, 149);
+    color: #fff;
+}
+.head button{
+    background-color: rgb(6,6,149);
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ccc;
+   padding: 2rem 6rem;
+}
+.box{
+    height: 80px;
+    width: 90px;
+    border: 1px solid;
+    margin: 5px;
+    cursor: pointer;
+ }
+
+ .box:hover{
+    scale: 1.2;
+ }
+ .box img{
+    height: 100%;
+    width: 100%;
+ }
+
+ .over{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(13, 13, 13, 0.691);
+    /* top: 5rem;
+    left: 30%; */
+    height: 100%;
+    width: 100%;
+    padding:9rem 1rem 1rem 25rem;
+
+ }
+ .over h1{
+    color: aqua;
+    font-size: 6rem;
+ }
+ .over h2{
+    color: rgb(255, 153, 0);
+    font-size: 4rem;
+    margin-left: 7rem;
+    padding-bottom: 10px;
+ }
+ .over button{
+    color: rgb(0, 55, 255);
+    background-color: brown;
+    padding: 25px 40px;
+    font-size: 30px;
+    margin-left: 7rem;
+    border-radius: 51px;
+ }
+ 
+ .over button:hover{
+    color: rgb(0, 255, 13);
+    background-color: rgb(242, 25, 104);
+ }
+ 
